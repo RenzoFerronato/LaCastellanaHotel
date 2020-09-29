@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit box-sizing: border-box;
+    -moz box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "open sans", arial, sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    background:url('../img/8.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    .contenedor{
+        position: relative;
+        height:700px;
+    }
+    .menu{
+        width: 100%;
+    text-align: right;
+      a{
+        color:#000;
+        font-size:20px;
+        font-weight:300;
+        display:inline-block;
+        margin:40px 20px;
+        text-decoration:none;
+        position:relative;
+        a:hover{
+            text-decoration:underline;
+        }
+      }
+    }
+    .texto{
+        width:100%;
+        color: #fff;
+        position:absolute;
+        top:50%;
+        margin-top: -52px;
+        /*max-width: 500px
+        padding: 200px; */
+        background: hsl(0deg 0% 0% / 40%);;
+        .nombre{
+            font-size: 70px;
+            font-weight:600;
+            span{
+                font-weight:300;
+            }
+        }
+        h3{
+        font-weight:300;
+        font-size:25px;
+        font-style:italic;
+        }
+    }
+}
+
+.main{
+    background: url('img/bg-textura.png');
+    background: repeat; 
+    .acerca-de{
+        .contenedor{
+        overflow: visible;
+        position: relative;
+        }
+        .foto{
+            width: 80%;
+            position:absolute;
+            left: 0;
+            top:-50px;
+            z-index: 0;
+            box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+            img{
+                vertical-align: top;
+                width: 100%;
+            }
+        }
+        article{
+            background: #fff;
+            padding: 40px;
+            width: 50%;
+            position: relative;
+            top: 500px;
+            /*top: 150px; */    
+            z-index: 1;
+            float: right;
+            box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+            h3{
+                font-size: 50px;
+                font-weight: 300;
+                margin-bottom: 40px;
+            }
+            p{
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+        
+    } 
+    .galeria{
+        overflow: hidden;
+        .titulo{
+            text-align: center;
+            font-size: 40px;
+            line-height:40px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .foto{
+            width: 25%;
+            float: left;
+            img{
+                width: 100%;
+                vertical-align: top;
+                opacity: .5;
+                img:hover{
+                 opacity: 1;
+                -webkit-transition:all .3s ease;
+                -o-transition:all .3s ease;
+                transition: all .3s ease;
+                }
+            }
+        }
+
+    }
+    .servicios{
+        .titulo{
+            text-align: center;
+            font-size: 40px;
+            line-height:40px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            line-height: 50px;
+        }
+    }
+    .ubicacion{
+        background: #fff;
+        padding: 68px 0;
+        overflow: hidden;
+        .titulo{
+            text-align: center;
+            font-size: 40px;
+            line-height:40px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .direccion{
+            float: left;
+            width: 50%;
+            text-align: left;
+            .calle{
+                margin-bottom: 15px;
+            }
+        }
+        .horarios{
+            float: right;
+            width: 50%;
+            text-align: right;
+            overflow: hidden;
+            h4{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .entre-semana,
+            .finde-semana{
+                width: 50%;
+                float: left;
+                text-align: center;
+            }
+        }
+
+    }
+    .mapa{
+        width: 100%;
+        overflow: hidden;
+        iframe{
+            width: 100%;
+            max-height: 600px;
+        }
+    }
+    .contacto{
+        padding: 60px 0;
+        background: #3c4045;
+        .titulo{
+            font-size: 34px;
+            line-height: 34px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: #fff;
+            text-align:center;
+        }
+        .formulario{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input[type="text"]:focus,
+            input[type="email"]:focus,
+            textarea:focus{
+                border: 2px solid #3029A4;
+
+            }
+            input[type="text"],
+            input[type="email"]{
+                width: 49%;
+                margin-bottom: 15px;
+            }
+            textarea{
+                width: 100%;
+                height: 100px;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 100px;
+                max-height: 300px;
+                margin-bottom: 15px;
+            }
+            .boton{
+                margin: auto;
+                background: #2883A4;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                padding: 15px 40px;
+                cursor: pointer;
+                .boton:hover{
+                    background:#000;
+                }
+            }
+        }
+    }
+
+}
+footer{
+    background: #000;
+    .final{
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+    }
+    .social{
+        text-align: center;
+        padding: 20px 0;
+        a{
+            padding: 10px;
+            display: inline-block;
+            margin: 0 20px;
+            width: 50px;
+            font-size: 22px;
+            color: #fff;
+            background: #000;
+            border-radius: 100px; 
+            a:hover{
+                text-decoration: none; 
+            }
+            &.facebook{
+                background: #3b5998;
+            }
+            &.twitter{
+                background: #55acee;
+            }
+            &.instagram{
+                background: #cd201f;
+            }
+        }
+    }
+
+}
