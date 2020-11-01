@@ -678,7 +678,7 @@ footer{
         }
         .ubicacion{
             padding: 15px 0;
-            padding-top: 25px;
+            padding-top: 0px;
             margin-bottom: 5px;
             .direccion{
                 margin-bottom: 15px;
@@ -694,9 +694,10 @@ footer{
             padding-top: 25px;
             margin-bottom: 5px;
             .titulo{
-                margin-bottom: 5px;
+                margin-top: 0px !important;
             }
             .contenedor{
+                margin-bottom: 0;
                 .fila1,
                 .fila2{
                     width: 100%;
@@ -709,10 +710,10 @@ footer{
         }
         .galeria{
             padding: 15px 0;
-            padding-top: 25px;
+            padding-top: 0px;
             margin-bottom: 5px;
             .titulo{
-                margin-bottom: 5px;
+                margin-top: 0px;
             }
             .gallery-container{
                 width: 100%;

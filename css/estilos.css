@@ -548,7 +548,7 @@ footer {
         margin-bottom: 10px; }
   .main .ubicacion {
     padding: 15px 0;
-    padding-top: 25px;
+    padding-top: 0px;
     margin-bottom: 5px; }
     .main .ubicacion .direccion {
       margin-bottom: 15px; }
@@ -561,20 +561,22 @@ footer {
     padding-top: 25px;
     margin-bottom: 5px; }
     .main .servicios .titulo {
-      margin-bottom: 5px; }
-    .main .servicios .contenedor .fila1,
-    .main .servicios .contenedor .fila2 {
-      width: 100%;
-      margin-left: 15px; }
-      .main .servicios .contenedor .fila1 .foto,
-      .main .servicios .contenedor .fila2 .foto {
-        margin-bottom: 40px; }
+      margin-top: 0px !important; }
+    .main .servicios .contenedor {
+      margin-bottom: 0; }
+      .main .servicios .contenedor .fila1,
+      .main .servicios .contenedor .fila2 {
+        width: 100%;
+        margin-left: 15px; }
+        .main .servicios .contenedor .fila1 .foto,
+        .main .servicios .contenedor .fila2 .foto {
+          margin-bottom: 40px; }
   .main .galeria {
     padding: 15px 0;
-    padding-top: 25px;
+    padding-top: 0px;
     margin-bottom: 5px; }
     .main .galeria .titulo {
-      margin-bottom: 5px; }
+      margin-top: 0px; }
     .main .galeria .gallery-container {
       width: 100%;
       border: 2px solid white;
