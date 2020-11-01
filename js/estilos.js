@@ -1,5 +1,8 @@
 $(document).ready(function(){
-	// EFECTO MENU
+	
+     if( $(window).width() > 800 ) {
+
+        // EFECTO MENU
        $('.menu a').each(function(index, element){
        	$(this).css({
        		'top':'-200px'
@@ -10,8 +13,7 @@ $(document).ready(function(){
         }, 2000 + (index * 500));
         });
 
-    //  EFECTO HEADER
-    if( $(window).width() > 800 ) {
+        // EFECTO HEADER
     	$('header .texto').css({
     		opacity:0,
     		margintop:0
@@ -20,6 +22,7 @@ $(document).ready(function(){
     		opacity:1,
     		margintop: '-52'
     	},1500 );
+
     }   
     // SCROLL DEL MENU
     var acercaDe = $('#acerca-de').offset().top,
@@ -30,7 +33,7 @@ $(document).ready(function(){
     $('#btn-acerca-de').on('click', function(e){
     	e.preventDefault();
     	$('html, body').animate({
-    		scrollTop: acercaDe - 100
+    		scrollTop: acercaDe - 150
     	}, 500);
     });
     $('#btn-menu').on('click', function(e){
@@ -51,4 +54,5 @@ $(document).ready(function(){
     		scrollTop: ubicacion 
     	}, 500);
     });
+
 });
