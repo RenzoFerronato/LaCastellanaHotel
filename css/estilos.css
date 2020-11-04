@@ -298,6 +298,13 @@ header {
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%; }
+      .main .contacto .formulario #campos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%; }
+      .main .contacto .formulario #enviando, .main .contacto .formulario #enviado, .main .contacto .formulario #error {
+        display: none; }
       .main .contacto .formulario input[type="text"]:focus,
       .main .contacto .formulario input[type="email"]:focus,
       .main .contacto .formulario textarea:focus {

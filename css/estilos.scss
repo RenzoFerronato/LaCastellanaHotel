@@ -355,6 +355,15 @@ header{
             flex-wrap: wrap;
             justify-content: space-between;
             width: 100%;
+            #campos{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+            #enviando, #enviado, #error{
+                display: none;
+            }
             input[type="text"]:focus,
             input[type="email"]:focus,
             textarea:focus{
